@@ -6,6 +6,8 @@ let userName = prompt('What is your name?');
 alert(`Welcome to my site ${userName}! Please answer the following questions with yes/no or y/n. I'd like to spend sometime for you to get to know me.`);
 console.log(`user name is ${userName}`);
 
+
+
 let questionOneGuess = prompt(`${userName}, do I have a daughter?`);
 questionOneGuess = questionOneGuess.toLowerCase();
 console.log(`user chose ${questionOneGuess}`);

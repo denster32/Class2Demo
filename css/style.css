@@ -1,0 +1,18 @@
+body{
+  background-color:lightgreen;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+
+h1{
+  font-size: 75px;
+  padding: 5%;  
+  
+}
+
+p{
+  font-size: 32px;
+  text-align: justify;
+  padding: 5%;  
+  background-image: url("/img/iraq.jpeg");
+}
