@@ -6,13 +6,15 @@ body{
 
 h1{
   font-size: 75px;
+  background-image: url("/img/iraq.jpeg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 20%;
   padding: 5%;  
-  
 }
 
 p{
   font-size: 32px;
   text-align: justify;
   padding: 5%;  
-  background-image: url("/img/iraq.jpeg");
 }
