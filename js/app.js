@@ -9,8 +9,8 @@ alert(`Welcome to my site ${userName}! Please answer the following questions wit
 
 questionOne();
 questionTwo();
-questionThree;
-
+questionThree();
+questionFour();
 
 // console.log(`user name is ${userName}`);
 function questionOne(){
@@ -63,22 +63,22 @@ function questionThree(){
   // console.log(userScore);
   }
 }
-
-let questionFourGuess = prompt(`${userName}, do I enjoy pizza?`).toLowerCase();
-// console.log(`user chose ${questionFourGuess}`);
-while(questionFourGuess === !'no' || !'yes' || !'n' || !'y'){
-  questionFourGuess = prompt('Please answer with a yes/no or y/n.  Do I enjoy pizza?').toLowerCase();
+function questionFour(){
+  let questionFourGuess = prompt(`${userName}, do I enjoy pizza?`).toLowerCase();
   // console.log(`user chose ${questionFourGuess}`);
-}
-if(questionFourGuess === 'yes' || questionFourGuess ==='y'){
-  alert(`Thats the correct answer ${userName}, everyone enjoys pizza!`);
-  userScore++;
+  while(questionFourGuess === !'no' || !'yes' || !'n' || !'y'){
+    questionFourGuess = prompt('Please answer with a yes/no or y/n.  Do I enjoy pizza?').toLowerCase();
+  // console.log(`user chose ${questionFourGuess}`);
+  }
+  if(questionFourGuess === 'yes' || questionFourGuess ==='y'){
+    alert(`Thats the correct answer ${userName}, everyone enjoys pizza!`);
+    userScore++;
   // console.log(userScore);
+  }
+  else if(questionFourGuess === 'no' || questionFourGuess === 'n'){
+    alert(`${userName}, everyone enjoys pizza to include myself.`);
+  }
 }
-else if(questionFourGuess === 'no' || questionFourGuess === 'n'){
-  alert(`${userName}, everyone enjoys pizza to include myself.`);
-}
-
 let questionFiveGuess = prompt(`${userName}, have I ever been struck by lightning?`).toLowerCase();
 // console.log(`user chose ${questionFiveGuess}`);
 while(questionFiveGuess === !'no' || !'yes' || !'n' || !'y'){
