@@ -2,16 +2,10 @@
 
 ## About Me
 
-I build an app with a direct and powerful purpose. It does all of the things that it accomplishes well. I should describe the purpose and functionality so those that visit my README understand the app
+This webpage asks the user 7 questions and keeps a running tally of correct responses.  It gives feedback along the way to inform the user.  When the questions are complete they are shown a webpage that displays a breif bio, my top ten movies and my school and work history.
 
 ### Author: Dennis Palucki
 
 ### Links and Resources
 
-submission PR
-Any Links you used as reference
-
 ### Reflections and Comments
-
-Consider including the answers to your daily journal and submission questions here
-This is also a good place to reflect on the tools and resources used and learned
