@@ -7,51 +7,61 @@ while(!userName){
 }
 alert(`Welcome to my site ${userName}! Please answer the following questions with yes/no or y/n. I'd like to spend sometime so that you can get to know me.`);
 
+questionOne();
+questionTwo();
+questionThree;
+
+
 // console.log(`user name is ${userName}`);
-
-let questionOneGuess = prompt(`${userName}, do I have a daughter?`).toLowerCase();
-// console.log(`user chose ${questionOneGuess}`);
-while(questionOneGuess === !'no' || !'yes' || !'n' || !'y'){
-  questionOneGuess = prompt('Please answer with a yes/no or y/n.  Do I have a daughter?').toLowerCase();
+function questionOne(){
+  let questionOneGuess = prompt(`${userName}, do I have a daughter?`).toLowerCase();
   // console.log(`user chose ${questionOneGuess}`);
-}
-if(questionOneGuess === 'yes' || questionOneGuess ==='y'){
-  alert('You got it wrong! No kids, never married.');
-}
-else if(questionOneGuess === 'no' || questionOneGuess === 'n'){
-  alert('Correct!');
-  userScore++;
+  while(questionOneGuess === !'no' || !'yes' || !'n' || !'y'){
+    questionOneGuess = prompt('Please answer with a yes/no or y/n.  Do I have a daughter?').toLowerCase();
+  // console.log(`user chose ${questionOneGuess}`);
+  }
+  if(questionOneGuess === 'yes' || questionOneGuess ==='y'){
+    alert('You got it wrong! No kids, never married.');
+  }
+  else if(questionOneGuess === 'no' || questionOneGuess === 'n'){
+    alert('Correct!');
+    userScore++;
   // console.log(userScore);
+  }
 }
 
-let questionTwoGuess = prompt(`${userName}, do I have a dog?`).toLowerCase();
-// console.log(`user chose ${questionTwoGuess}`);
-while(questionTwoGuess === !'no' || !'yes' || !'n' || !'y'){
-  questionTwoGuess = prompt('Please answer with a yes/no or y/n.  Do I have a dog?').toLowerCase();
+function questionTwo(){
+  let questionTwoGuess = prompt(`${userName}, do I have a dog?`).toLowerCase();
   // console.log(`user chose ${questionTwoGuess}`);
-}
-if(questionTwoGuess === 'yes' || questionTwoGuess ==='y'){
-  alert('Correct!');
-  userScore++;
+  while(questionTwoGuess === !'no' || !'yes' || !'n' || !'y'){
+    questionTwoGuess = prompt('Please answer with a yes/no or y/n.  Do I have a dog?').toLowerCase();
+  // console.log(`user chose ${questionTwoGuess}`);
+  }
+  if(questionTwoGuess === 'yes' || questionTwoGuess ==='y'){
+    alert('Correct!');
+    userScore++;
   // console.log(userScore);
-}
-else if(questionTwoGuess === 'no' || questionTwoGuess === 'n'){
-  alert('Wrong... I have a 15 year old Husky.');
+  }
+  else if(questionTwoGuess === 'no' || questionTwoGuess === 'n'){
+    alert('Wrong... I have a 15 year old Husky.');
+  }
 }
 
-let questionThreeGuess = prompt(`${userName}, have I ever been to space?`).toLowerCase();
-// console.log(`user chose ${questionThreeGuess}`);
-while(questionThreeGuess === !'no' || !'yes' || !'n' || !'y'){
-  questionThreeGuess = prompt('Please answer with a yes/no or y/n.  Have I been to space!?').toLowerCase();
+function questionThree(){
+  let questionThreeGuess = prompt(`${userName}, have I ever been to space?`).toLowerCase();
   // console.log(`user chose ${questionThreeGuess}`);
-}
-if(questionThreeGuess === 'yes' || questionThreeGuess ==='y'){
-  alert(`${userName}, very few people have been to space... and I am not one of them.`);
-}
-else if(questionThreeGuess === 'no' || questionThreeGuess === 'n'){
-  alert(`Correct ${userName}, I have not been to space.`);
-  userScore++;
+  while(questionThreeGuess === !'no' || !'yes' || !'n' || !'y'){
+    questionThreeGuess = prompt('Please answer with a yes/no or y/n.  Have I been to space!?').toLowerCase();
+  // console.log(`user chose ${questionThreeGuess}`);
+  }
+  if(questionThreeGuess === 'yes' || questionThreeGuess ==='y'){
+    alert(`${userName}, very few people have been to space... and I am not one of them.`);
+  }
+  else if(questionThreeGuess === 'no' || questionThreeGuess === 'n'){
+    alert(`Correct ${userName}, I have not been to space.`);
+    userScore++;
   // console.log(userScore);
+  }
 }
 
 let questionFourGuess = prompt(`${userName}, do I enjoy pizza?`).toLowerCase();
@@ -86,18 +96,17 @@ else if(questionFiveGuess === 'no' || questionFiveGuess === 'n'){
 
 let myNum = Math.floor(Math.random() * 101);
 // console.log(myNum);
-let questionSixGuess = prompt(`Let's play a little game ${userName}, please guess a number from 0 - 100.`);
+let questionSixGuess = +prompt(`Let's play a little game ${userName}, please guess a number from 0 - 100.`);
 for(let i = 0; i < 3; i++){
   if (questionSixGuess > myNum){
-    questionSixGuess = prompt('Too high, try again.');
+    questionSixGuess = +prompt('Too high, try again.');
   }
   else if (questionSixGuess < myNum){
-    questionSixGuess = prompt('Too low, try again.');
+    questionSixGuess = +prompt('Too low, try again.');
   }
   else{
     break;
   }
-
   // console.log(questionSixGuess);
 }
 if(myNum === questionSixGuess){
