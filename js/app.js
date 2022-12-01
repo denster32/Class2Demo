@@ -87,9 +87,6 @@ else if(questionFiveGuess === 'no' || questionFiveGuess === 'n'){
 let myNum = Math.floor(Math.random() * 101);
 // console.log(myNum);
 let questionSixGuess = prompt(`Let's play a little game ${userName}, please guess a number from 0 - 100.`);
-while(questionSixGuess > 100 || !== 'string'){
-  questionSixGuess = prompt(`${userName}, please select a number from 0 to 100.`)
-}
 for(let i = 0; i < 3; i++){
   if (questionSixGuess > myNum){
     questionSixGuess = prompt('Too high, try again.');
